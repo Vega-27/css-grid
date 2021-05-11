@@ -1,3 +1,54 @@
 .main-container {
+    width: 90%;
     display: grid;
+    grid-template-columns: 1fr 8fr 2fr;
+    grid-template-rows: 75px 400px 50px;
+    grid-template-areas: 
+        "header header header"
+        "media-left main media-right"
+        "footer footer footer";
+    margin: auto;
+}
+    /*Main Layout - Sub-containers*/
+.header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-left {
+    grid-area: media-left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.media-right {
+    grid-area: media-right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#item {
+    border: solid black 1px;
+    border-radius: 5px;
+    background-color: yellow;
+    width: auto;
+    height: auto;
 }
